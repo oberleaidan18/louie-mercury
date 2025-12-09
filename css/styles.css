@@ -1,0 +1,429 @@
+/*Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*Reset Style Sheet*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header Styles*/
+    header {
+        padding-top: 1em;
+    }
+    header h1 {
+        color: #f8f5f0;
+        font-family: "IBM Plex Mono", monospace;
+        
+    }
+    /*Navigation Bar*/
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        font-size: 1.1em;
+        font-family: "IBM Plex Mono", monospace;
+        padding: 0.3125em;
+        /*margin: 0.3125em;*/
+    }
+    header nav {
+        position: sticky;
+        top: 10px;
+    }
+    header nav ul li {
+        margin: 0 1.2em; /*space between each nav item*/
+    }
+    header nav ul li a {
+        color: #fef3ed;
+        text-decoration: none; 
+    }
+    header nav ul li a:hover {
+        color: #c46b47;
+    }
+
+    /*Hero Image*/
+    #home {
+        background-image: url(/images/hero-image-cropped.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 85vh;
+        position: relative;
+    }
+
+    .socials { /*Social Media Images*/
+        /*width: 2.15vw;*/
+        height: 3vh;
+    }
+
+    .contact-button { /*Contact Button Image*/
+        height: 3vh;
+    }
+    .contact-button:hover {
+        #
+    }
+
+    /*Social Media Aside*/
+    #homesocials { 
+        position: absolute;
+        right: 30px;
+        top: 45px;
+        /*margin: 6vh 2vw;*/
+        
+
+        /*position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+        padding: 7.5vh 2vw;*/
+    
+    }
+    #homesocials a {
+        text-decoration: none;
+    }
+
+    #homesocials a img {
+        margin: 0 15px;
+    }
+
+    #audioplayer {
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        left: 30px;
+        text-align:left;
+        filter: invert(1);
+    } 
+
+
+/*H1-3 Styles*/
+    h1, h2, h3{
+        font-family: "IBM Plex Mono", monospace;
+        color: #c46b47;
+        text-align: center;
+        /*padding: 10;*/
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 60px;
+        font-weight: 650;
+    }
+    h3 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+/*Body Styles*/
+    body {
+        position: absolute;
+        background-color: #f8f5f0;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-size: 100%;
+        color: #2c2a28;
+    }
+
+/*About Me Page Styles*/    
+    #aboutme {
+        height: 90vh;
+        margin: 30px;
+        /*padding: 50px 0px;*/
+        position: relative;
+        border-top-left-radius: 80px; /*Curve for shadow*/
+        border-top-right-radius: 80px;/*Curve for shadow*/
+        margin-top: -5px; /*Overlay for shadow*/
+    }
+
+    #aboutme::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25), transparent 70%);
+        z-index: -1;
+    }
+
+    #aboutimage img {
+        position: absolute;
+        right: 90px;
+        top: 130px;
+        width: 33vw;
+    }
+    #aboutme h2 {
+        position:absolute;
+        left: 40px;
+        top: 70px;
+        text-align: left;
+        margin-right: 450px;
+    }
+    #aboutme p {
+        position: absolute;
+        top: 190px;
+        left: 40px;
+        /*margin-top: 150px;
+        margin-right: 180px;*/
+        
+        font-size: 22px;
+        width: 700px;
+        text-align: left;
+        word-spacing: 6px;
+        /*line-height: 1.6;*/
+        /*margin-left: auto;
+        margin-right: 330px;*/
+    }
+    #aboutme strong {
+        color: #c46b47;
+    }
+
+/*Ventures Page Styles*/
+    #ventures {
+        background-color: #2c2a28;
+        color: #f8f5f0;
+        padding: 100px 60px;
+    }
+
+    #ventures h2 {
+        text-align: center;
+        color: #fef3ed;
+        margin-bottom: 80px;
+    }
+
+/* Main container */
+    #ventures-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 120px; /* space between rows */
+    }
+
+/* Each row = 2 columns */
+    .ventures-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+    }
+
+/* When reversed: swap columns */
+    .ventures-row.reverse {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ventures-row.reverse .ventures-text {
+        order: 1;
+    }
+
+    .ventures-row.reverse .ventures-img {
+        order: 2;
+    }
+
+/* Image styling */
+    .ventures-img img {
+        width: 90%;
+        height: auto;
+        display: block;
+    }
+
+/* Text box styling */
+    .ventures-text {
+        /*background-color: #f8f5f0;*/
+        color:#f8f5f0;
+        padding: 35px 40px;
+        border-radius: 22px;
+    }
+
+    .ventures-text strong {
+        color: #c46b47;
+    }
+
+    .ventures-text h3 {
+            color: #c46b47;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    .ventures-text p {
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+/*Contact Me Page Styles*/
+    #contactme {
+        height: 80vh;
+        align-items: center;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    #contactme #getintouch-header h2 {
+        margin-top: -78px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+
+    #getintouch-shadows h2 {
+        color:#54595710;
+        
+    }
+    #getintouch-shadows {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contactme p {
+        text-align: center;
+        font-family: #;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        padding-top: 20px;
+    }
+
+   /*Contact Form*/
+
+    input, textarea, button {
+        font: inherit;
+        font-family: 'IBM Plex Sans',sans-serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    form {
+        display: grid;
+        gap: 1rem;
+
+        @media (width > 720px) {
+            grid-template-columns: 1fr;
+        }
+    } 
+
+    .form-group {
+        display: grid;
+        gap: 1rem;
+    }
+
+    input, textarea {
+        background-color:#f8f5f0;
+        color: #2c2a28;
+        border: #2c2a28;
+        border-radius: 8px;
+        padding: 1ex 2ex;
+        width: 45%;
+        justify-self: center;
+    }
+
+    input, textarea::placeholder {
+        text-align: center;
+    }
+
+    
+
+    .form-group hr {
+        color: #2c2a28;
+        width: 45%;
+        justify-self: center;
+    }
+    
+    textarea {
+        resize: vertical;
+        max-height: 130px;
+        min-height: 100px;
+    }
+
+    form button {
+        justify-self: center;
+        background: #c46b47;
+        color: #f8f5f0;
+        font-size: 18px;
+        font-weight: 400;
+        border-style: hidden;
+        border-radius: 6px;
+        padding: 1ex 2ex;
+    }
+
+    form button:hover {
+        font-size: 19px;
+        box-shadow: #2c2a28;
+
+    }
+
+    #email a{
+        color: #c46b47;
+        text-decoration: none;
+
+        font-weight: 200;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 190px;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        
+    }
+
+    
+    /*Social Media Images Contact Me*/
+    .socials-contactme {
+        height: 3vh;
+    }
+    #socials-contactme {
+        position:absolute;
+        bottom: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #socials-contactme a {
+        text-decoration: none;
+    }
+
+    #contactme a img {
+        margin: 0 8px;
+    }
+
+/*Footer Styles*/
+    footer {
+        background-color: #2c2a28;
+        text-align: center;
+        height: 9vh;
+        padding: 20px;
+        position: relative;
+    }
+    .container-footer {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer h3 {
+        color: #c46b47;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 35px;
+        padding: 2px;
+    }
+    footer nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        font-family: "IBM Plex Mono", monospace;
+        padding: 0px;
+        margin: 5px;
+        
+    }
+    footer nav ul li {
+        margin: 0 10px;
+    }
+    footer nav ul li a {
+        color: #c46b47;
+        text-decoration: none; 
+    }
+    footer nav ul li a:hover {
+        color: #fef3ed;
+    }
