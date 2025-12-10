@@ -296,11 +296,11 @@
         display: grid;
         gap: 1rem;
     }
-    @media (width > 720px) {
+    /*@media (width > 720px) {
         form {
          grid-template-columns: 1fr;
         }
-    }
+    }*/
     
 
     .form-group {
@@ -423,6 +423,7 @@
     footer nav ul li a:hover {
         color: #fef3ed;
     }
+
 
 
 
