@@ -59,9 +59,6 @@
     .contact-button { /*Contact Button Image*/
         height: 3vh;
     }
-    .contact-button:hover {
-        #
-    }
 
     /*Social Media Aside*/
     #homesocials { 
@@ -279,7 +276,6 @@
 
     #contactme p {
         text-align: center;
-        font-family: #;
         font-size: 24px;
         font-weight: 300;
         letter-spacing: 2px;
@@ -299,11 +295,13 @@
     form {
         display: grid;
         gap: 1rem;
-
-        @media (width > 720px) {
-            grid-template-columns: 1fr;
+    }
+    @media (width > 720px) {
+        form {
+         grid-template-columns: 1fr;
         }
-    } 
+    }
+    
 
     .form-group {
         display: grid;
@@ -351,8 +349,6 @@
 
     form button:hover {
         font-size: 19px;
-        box-shadow: #2c2a28;
-
     }
 
     #email a{
@@ -427,5 +423,6 @@
     footer nav ul li a:hover {
         color: #fef3ed;
     }
+
 
 
