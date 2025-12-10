@@ -116,7 +116,7 @@
 /*Body Styles*/
     body {
         position: absolute;
-        background-color: #f8f5f0;
+        /*background-color: #f8f5f0;*/
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 400;
         font-size: 100%;
@@ -423,6 +423,7 @@
     footer nav ul li a:hover {
         color: #fef3ed;
     }
+
 
 
 
