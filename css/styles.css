@@ -230,8 +230,8 @@
 
 /* Text box styling */
     .ventures-text {
-        /*background-color: #f8f5f0;*/
-        color:#f8f5f0;
+        background-color: #f8f5f0;
+        color:#2c2a28;
         padding: 35px 40px;
         border-radius: 22px;
     }
@@ -243,13 +243,13 @@
     .ventures-text h3 {
             color: #c46b47;
             margin-bottom: 20px;
-            text-align: center;
+            text-align: left;
         }
 
     .ventures-text p {
             font-size: 20px;
             line-height: 1.6;
-            text-align: center;
+            text-align: left;
         }
 
 /*Contact Me Page Styles*/
