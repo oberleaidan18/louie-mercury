@@ -45,11 +45,18 @@
 					</a>		
 			</aside>	
 			
-			<!--<section id="audioplayer">
-				<audio controls>
-					<source src="#" type="audio/wav">
-				</audio>
-			</section> -->
+			<div class="audio-player">
+
+				<div class="track-info">
+					<p class="track-title">SKYLINE</p>
+					<p class="track-producer">Prod. by Louie Mercury</p>
+				</div>
+
+				<button id="play-pause">
+					<img id="play-pause-icon" src="images/play.png" alt="Play">
+				</button>
+				<div id="waveform"></div>
+			</div>
 		</header>
 		
 		<main>
@@ -167,7 +174,7 @@
 					</form>
 
 				</div>
-			<div id="email">
+			<div id="socials-email">
 				<a href="#"><strong>email:</strong> oberleaidan.music@gmail.com</a>
 			</div>
 				<div id="socials-contactme">
@@ -209,5 +216,8 @@
 				</nav>
 			</div>
 		</footer>
+
+		<script src="https://unpkg.com/wavesurfer.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
