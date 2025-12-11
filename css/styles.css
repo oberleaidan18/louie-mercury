@@ -43,11 +43,11 @@
 
     /*Hero Image*/
     #home {
-        background-image: url("images/hero-image-cropped.png");
+        background-image: url("/images/hero-image-cropped.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 85vh;
+        height: 90vh;
         position: relative;
     }
 
@@ -82,6 +82,59 @@
     #homesocials a img {
         margin: 0 15px;
     }
+
+    .audio-player {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        background: #333;
+        padding: 20px;
+        border-radius: 10px;
+        color:#fef3ed;
+
+        z-index: 999;
+    }
+    #play-pause {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    #play-pause img {
+        height: 5vh;
+    }
+
+    #waveform {
+        width: 1400px;
+        height: 30px;
+    }
+
+    .track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60px; /* spacing before play button */
+}
+
+.track-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f8f5f0; /* match your color theme */
+    margin: 0;
+}
+
+.track-producer {
+    font-size: 13px;
+    color: #c9c4bd; /* lighter color */
+    margin: 0;
+}
 
 
 /*H1-3 Styles*/
@@ -172,7 +225,8 @@
     #ventures {
         background-color: #2c2a28;
         color: #f8f5f0;
-        padding: 100px 60px;
+        padding: 40px 60px;
+        padding-bottom: 100px;
     }
 
     #ventures h2 {
@@ -342,18 +396,19 @@
         font-size: 19px;
     }
 
-    #email a{
+    #socials-email, #socials-contactme {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #socials-email a {
         color: #c46b47;
         text-decoration: none;
-
         font-weight: 200;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 190px;
         font-size: 20px;
         letter-spacing: 1.5px;
-        
     }
 
     
@@ -362,10 +417,8 @@
         height: 3vh;
     }
     #socials-contactme {
-        position:absolute;
-        bottom: 140px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: 15px; /* space below email */
+        gap: 16px;        /* spacing between icons */
     }
     #socials-contactme a {
         text-decoration: none;
@@ -375,11 +428,15 @@
         margin: 0 8px;
     }
 
+    #socials-email {
+    padding-top: 20px;
+}
+
 /*Footer Styles*/
     footer {
         background-color: #2c2a28;
         text-align: center;
-        height: 9vh;
+        height: 20vh;
         padding: 20px;
         position: relative;
     }
@@ -389,7 +446,7 @@
         transform: translateX(-50%);
     }
     footer h3 {
-        color: #c46b47;
+        color: #fef3ed;
         font-family: "IBM Plex Mono", monospace;
         font-size: 35px;
         padding: 2px;
@@ -408,22 +465,9 @@
         margin: 0 10px;
     }
     footer nav ul li a {
-        color: #c46b47;
+        color: #fef3ed;
         text-decoration: none; 
     }
     footer nav ul li a:hover {
-        color: #fef3ed;
+        color: #c46b47;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
