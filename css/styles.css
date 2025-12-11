@@ -50,6 +50,7 @@
         height: 90vh;
         width: 100%;
         position: relative;
+        z-index: 1;
     }
 
     .socials { /*Social Media Images*/
@@ -472,6 +473,7 @@
     footer nav ul li a:hover {
         color: #c46b47;
     }
+
 
 
 
