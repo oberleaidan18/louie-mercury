@@ -43,7 +43,7 @@
 
     /*Hero Image*/
     .home {
-        background-image: url("../images/hero-image.png");
+        background-image: url("../images/hero-image.png") !important;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -477,6 +477,7 @@
     footer nav ul li a:hover {
         color: #c46b47;
     }
+
 
 
 
