@@ -8,7 +8,7 @@ const wavesurfer = WaveSurfer.create({
     responsive: true
 });
 
-// Load your audio file
+// Load audio file
 wavesurfer.load('media/skyline.mp3');
 
 // Hook up play/pause button
@@ -25,7 +25,8 @@ playPauseBtn.addEventListener('click', () => {
     }
 });
 
-// Optional: change icon when song ends
+// Change icon when song ends
 wavesurfer.on('finish', () => {
     playPauseIcon.src = "images/play.png";
+
 });
