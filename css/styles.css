@@ -51,6 +51,10 @@
         width: 100%;
         position: relative;
         z-index: 1;
+
+        /* temporary debug */
+        border: 3px solid red;
+        background-color: #333; /* temporary */
     }
 
     .socials { /*Social Media Images*/
@@ -473,6 +477,7 @@
     footer nav ul li a:hover {
         color: #c46b47;
     }
+
 
 
 
